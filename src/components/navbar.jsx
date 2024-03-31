@@ -12,13 +12,13 @@ import more_icon from "../assets/more.png"
 import notification_icon from "../assets/notification.png"
 import profile_icon from "../assets/jack.png"
 import './Navbar.css'
-const Navbar = () => {
+const Navbar = ({setsidebar}) => {
   return (
     <nav className='flex-div'>
       <div className='nav-left flex-div'>
-   <img className='menu_icon' src={menu_icon} alt="menu" />
-   {/* <YouTubeIcon/> */}
-   <img className='logo' src={logo} alt="menu" />
+   <img className='menu_icon' onClick={()=>setsidebar(prev=>!prev)} src={menu_icon} alt="menu" />
+   {/* <YouTubeIcon/> we can use material UI icons  */}
+  <Link to='/'><img className='logo' src={logo} alt="menu" /></Link> 
       </div>
 <div className="nav-middle flex-div">
   <div className="search_box flex-div">
