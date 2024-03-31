@@ -13,7 +13,7 @@ const [sidebar,setsidebar]=useState(true);
    <div>
     <Navbar setsidebar={setsidebar}/>
     <Routes>
-      <Route path='/' element={<Home sidebar={sidebar}/>}/>
+      <Route path='/youtube-clone' element={<Home sidebar={sidebar}/>}/>
       <Route path='/video/:categoryID/:videoID' element={<Video/>}></Route>
 
 
