@@ -3,7 +3,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 // import {box} from '@mui/material'
 
 // import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar'
 import  Home from './pages/home/Home'
 import Video from './pages/video/Video'
 function App() {
